@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Home
 ---
 
 <h2>Hi, I'm Savir!</h2>
