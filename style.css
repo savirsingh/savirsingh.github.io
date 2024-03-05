@@ -1,0 +1,127 @@
+body.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark header {
+  background-color: #333;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Change the opacity value (0.1) as needed */
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.4;
+}
+
+main {
+  padding: 14px;
+}
+
+h1, h2, h3, h4, h5 {
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Change the opacity value (0.1) as needed */
+    padding-bottom: 0.5rem; /* Adjust the padding as needed */
+    margin-bottom: 1rem; /* Adjust the margin as needed */
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  color: #ff6347;
+  transition: color 0.6s;
+}
+
+a:hover {
+  color: #913423;
+}
+
+/* Style the navbar */
+header {
+  background: #fff;
+  padding: 15px; /* Add some padding around the content */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space items evenly along the main axis */
+  align-items: center; /* Center items along the cross axis */
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Position it at the top of the page */
+  width: 100%; /* Make it span the full width of the page */
+  z-index: 1000; /* Ensure it's above other elements */
+  border-bottom: 1px solid #ccc;
+}
+
+/* Style the h1 element */
+header h1 {
+  text-decoration: none;
+  font-size: 24px;
+  border-bottom: none !important;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin: 0;
+}
+
+/* Style the navigation menu */
+header ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+/* Style the navigation menu items */
+header ul li {
+  margin-right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Change color of navbar items on hover */
+header ul li:hover {
+  color: #ff6347;
+}
+
+imagebox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background 0.4s, color 0.4s;
+  padding: 8px;
+}
+
+imagebox img {
+  width: 100%;
+}
+
+imagebox:hover {
+  background: #99989e;
+  color: #fff;
+}
+
+::selection {
+    background-color: #ff6347;
+    color: #fff;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
+footer .social-icon {
+  font-size: 42px;
+  padding: 8px;
+}
+
