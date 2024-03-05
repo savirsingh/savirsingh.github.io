@@ -100,14 +100,10 @@ header a {
 }
 
 header a:hover {
-  color: #333;
+  color: #ff6347;
 }
 
 body.dark header a {
-  color: #fff;
-}
-
-body.dark header a:hover {
   color: #fff;
 }
 
