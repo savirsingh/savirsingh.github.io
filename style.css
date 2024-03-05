@@ -95,9 +95,19 @@ header ul li:hover {
 
 header a {
   color: #333;
+  text-decoration: none;
+  transition: none;
+}
+
+header a:hover {
+  color: #333;
 }
 
 body.dark header a {
+  color: #fff;
+}
+
+body.dark header a:hover {
   color: #fff;
 }
 
