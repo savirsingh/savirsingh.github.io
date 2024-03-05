@@ -93,6 +93,14 @@ header ul li:hover {
   color: #ff6347;
 }
 
+header a {
+  color: #ccc;
+}
+
+body.dark header a {
+  color: #fff;
+}
+
 imagebox {
   display: flex;
   flex-direction: column;
@@ -124,4 +132,3 @@ footer .social-icon {
   font-size: 42px;
   padding: 8px;
 }
-
