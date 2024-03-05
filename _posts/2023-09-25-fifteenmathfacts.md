@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title:  "15 Fun Math Facts I've Collected"
 date:   2023-09-25 19:20:00 -0400
 categories: Math
