@@ -27,3 +27,14 @@ title: Home
 </imagebox>
 </div>
 </div>
+
+<h2>My Latest Posts</h2>
+
+{% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+{% for post in sorted_posts limit:3 %}
+<div>
+  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+  <p>{{ post.content | number_of_words | divided_by: 200 | round }} minute read</p>
+  <p>{{ post.excerpt }}</p>
+</div>
+{% endfor %}
