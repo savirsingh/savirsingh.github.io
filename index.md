@@ -33,7 +33,7 @@ title: Home
 {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
 {% for post in sorted_posts limit:3 %}
 <div>
-  <h3 style="border-bottom: none"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+  <h3 style="padding-bottom: 0; margin-bottom: 0; border-bottom: none"><a href="{{ post.url }}">{{ post.title }}</a></h3>
   <small>{{ post.content | number_of_words | divided_by: 200 | round }} minute read</small><br>
   <small>{{ post.excerpt }}</small>
 </div><br><br>
