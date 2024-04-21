@@ -9,7 +9,7 @@ title: Home
 <p>I'm a Canadian high school student interested in computer science, engineering, and related concepts.</p>
 <p>In my free time, you will find me developing software, creating new technologies, participating in competitive programming competitions, doing math, or reading. My skillset includes C/C++, Python, Java, web development, SQL, Git, Docker, and Linux. For more information, please view <a href="/resume">my résumé</a>.</p>
 
-<p>I sometimes build custom web/desktop applications for individuals and companies. Please contact me at <a href="mailto:savir@savirsingh.com">savir@savirsingh.com</a> to get started with this.</p>
+<p>I sometimes build custom web/desktop applications for individuals and companies. Please contact me at <a href="mailto:savirsinghwork@gmail.com">savirsinghwork@gmail.com</a> to get started with this.</p>
 
 <p>This is my personal website. I use it to share my projects, public contact information, résumé, and blog posts with the world.</p>
 
