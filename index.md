@@ -6,7 +6,7 @@ title: Home
 <h2>Hi, I'm Savir!</h2>
 <div style="display: flex">
 <div style="width: 60%">
-<p>I'm a Canadian high school student interested in computer science, engineering, and related concepts.</p>
+<p>I'm a Canadian high school student interested in computer science, engineering, and related concepts. Until April 2024, I was working as a student researcher and software engineering intern at the University of Waterloo. Prior to that, I worked as a backend engineer intern at American Inn Ozark.</p>
 <p>In my free time, you will find me developing software, creating new technologies, participating in competitive programming competitions, doing math, or reading. My skillset includes C/C++, Python, Java, web development, SQL, Git, Docker, and Linux. For more information, please view <a href="/resume">my résumé</a>.</p>
 
 <p>I sometimes build custom web/desktop applications for individuals and companies. Please contact me at <a href="mailto:savirsinghwork@gmail.com">savirsinghwork@gmail.com</a> to get started with this.</p>
