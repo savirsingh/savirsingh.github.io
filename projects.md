@@ -12,26 +12,43 @@ I have *a lot* of projects, but here I have compiled a list of my favourite proj
 
 ## Open-Source Projects
 
-Since I frequently use GitHub, I have quite a few open-source projects in a variety of languages. Below is a table of interesting projects in no particular order.
+Since I frequently use GitHub, I have quite a few open-source projects in a variety of languages. Below is a table I've written, where my GitHub repositories are automatically updated.
 
-* [This Website](https://github.com/savirsingh/savirsingh.github.io)
-* [My Old Website](https://github.com/savirsingh/my-style-website)
-* [BYTEsense - HTN 2023 Replit Winner](https://github.com/savirsingh/bytesense-htn-project)
-* [Py To CPP](https://github.com/savirsingh/pytocpp)
-* [Thatformworks](https://github.com/savirsingh/thatformworks)
-* [SavirCSS](https://github.com/savirsingh/savircss)
-* [ProfilePop](https://github.com/savirsingh/profilepop)
-* [School Average Tracker](https://github.com/savirsingh/school-average-tracker)
-* [CCC Solutions](https://github.com/savirsingh/ccc-solutions)
-* [CCO Solutions](https://github.com/savirsingh/cco-solutions)
-* [Codeforces Solutions](https://github.com/savirsingh/codeforces-solutions)
-* [CSES Solutions](https://github.com/savirsingh/cses-solutions)
-* [Sixordle](https://github.com/sixordle/sixordle.github.io)
+<div class="container">
+        <table id="repo-table">
+            <tr>
+                <th>Repository Name</th>
+                <th>Description</th>
+                <th><i class="fa-regular fa-star"></i></th>
+                <th><i class="fa-solid fa-code-fork"></i></th>
+                <th>Last Updated</th>
+            </tr>
+        </table>
+    </div>
+    <script>
+        fetch('https://savirsingh.pythonanywhere.com/github')
+            .then(response => response.json())
+            .then(data => {
+                const table = document.getElementById('repo-table');
+                data.forEach(repo => {
+                    const row = table.insertRow();
+                    row.innerHTML = `
+                        <td><a style="color: black; text-decoration: none" href="${repo.html_url}"><i class="fab fa-github"></i> ${repo.name}</a></td>
+                        <td>${repo.description}</td>
+                        <td>${repo.stargazers_count}</td>
+                        <td>${repo.forks_count}</td>
+                        <td>${repo.updated_at}</td>
+                    `;
+                });
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    </script>
 
 ## Closed-Source Projects
 
 I also have various projects which aren't open-source. Here's a list.
 
+* [Math Contest Repository](https://mathcontestrepository.pythonanywhere.com)
 * [Volcano Judge](https://volcanojudge.pythonanywhere.com)
-* [American Inn Ozark Website](https://www.ozarkamericaninn.com)
+* [American Inn Ozark Website](https://www.americaninnozark.com/)
 * [Forumle](https://forumle.guessoword.com)
