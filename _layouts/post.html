@@ -1,45 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>{{ page.title }} | Savir Singh</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Blog Post | Savir Singh</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/whitelogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-<link rel="icon" href="/whitelogo.png">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-  
 <body>
-<header>
-<h1><a style="text-decoration: none" href="/">Savir Singh</a></h1>
-<ul>
-<li><a href="/">About Me</a></li>
-<li><a href="/resume">Résumé</a></li>
-<li><a href="/projects">Projects</a></li>
-<li><a href="/blog">Writing</a></li>
-<li id="theme-toggle"><i class="fas fa-adjust"></i></li>
-</ul>
-</header>
-  
-<br><br><br><br><main>
-{{ content }}
-  <p>Last updated: {{ page.date | date: "%B %-d, %Y" }}</p>
-  <p><a href="/blog">Back to Blog</a></p>
-
-</main>
-
-<footer>
-<p>&copy 2021-2024 Savir Singh. All rights reserved.</p>
-<div class="social">
+    <header>
+        <h1>Savir Singh</h1>
+        <p>Software Developer, GWSS '25</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/resume">Résumé</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/blog">Writing</a></li>
+        </ul>
+    </nav>
+    <main>
+        {{content}}<br>
+        <p>Last updated: {{ page.date | date: "%B %-d, %Y" }}</p>
+        <p>To read more of my writing, view <a href="/blog">all my posts</a>.</p>
+    </main>
+    <footer>
+        <p>&copy; 2021-2024 Savir Singh. All rights reserved.</p>
+        <div class="social">
 <a href="https://linkedin.com/in/savirss" class="social-icon"><i class="fab fa-linkedin"></i></a>
 <a href="https://github.com/savirsingh" class="social-icon"><i class="fab fa-github"></i></a>
 <a href="https://twitter.com/kopichiki" class="social-icon"><i class="fab fa-twitter"></i></a>
 </div>
-<br><br>
-</footer>
-
-<script src="/script.js"></script>
+    </footer>
 </body>
 </html>
