@@ -3,38 +3,22 @@ layout: default
 title: Home
 ---
 
-<h2>Hi, I'm Savir!</h2>
-<div style="display: flex">
-<div style="width: 60%">
-<p>I'm a Canadian high school student interested in computer science, engineering, and related concepts. Until April 2024, I was working as a student researcher and software engineering intern at the University of Waterloo. Prior to that, I worked as a backend engineer intern at American Inn Ozark.</p>
-<p>In my free time, you will find me developing software, creating new technologies, participating in competitive programming competitions, doing math, or reading. My skillset includes C/C++, Python, Java, web development, SQL, Git, Docker, and Linux. For more information, please view <a href="/resume">my résumé</a>.</p>
-
-<p>I sometimes build custom web/desktop applications for individuals and companies. Please contact me at <a href="mailto:savirsinghwork@gmail.com">savirsinghwork@gmail.com</a> to get started with this.</p>
-
-<p>This is my personal website. I use it to share my projects, public contact information, résumé, and blog posts with the world.</p>
-
-<p>Some quick links that might be of interest to you are listed below:</p>
-<ul style="font-size: 18px">
-<li><a href="/resume">My résumé</a></li>
-<li><a href="https://github.com/savirsingh">My GitHub</a></li>
-<li><a href="https://mathcontestrepository.pythonanywhere.com/user/savir">My Math Contest Repository (MCR) profile</a></li>
-</ul>
-</div>
-<div style="width: 32%">
-<imagebox>
-<img style="width: 100%" src="cubed.jpg">
-<caption>My favourite image - an AI-generated artwork of an impossible design that initially appears to be plausible.</caption>
-</imagebox>
-</div>
-</div>
-
-<h2>My Latest Posts</h2>
-
-{% assign sorted_posts = site.posts | sort: 'date' | reverse %}
-{% for post in sorted_posts limit:3 %}
-<div>
-  <h3 style="padding-bottom: 0; margin-bottom: 0; border-bottom: none"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-  <small>{{ post.content | number_of_words | divided_by: 200 | round }} minute read</small><br>
-  <small>{{ post.excerpt }}</small>
-</div><br><br>
-{% endfor %}
+<section id="about">
+            <h2>About Me</h2>
+            <p>I'm a Canadian high school student interested in computer science, engineering, and related concepts. I enjoy building things and programming.</p> <p>From January to April 2024, I was working as a student researcher and software engineering intern at the University of Waterloo. During this internship, I built a GUI for a terminal-based software security project. I also produced a demo that was presented at <a href="https://conf.researchr.org/home/icse-2024">the International Conference on Software Engineering 2024</a>. Prior to that, I was a backend engineer intern at American Inn Ozark, where I worked closely with staff to build <a href="https://www.americaninnozark.com">their beta-stage website</a>, as well as a customizable real-time pinging system to notify hotel management of new reservations (this was my innovation).</p>
+            <p>In my free time, you will find me developing software, creating new technologies, participating in competitive programming competitions, doing math, or reading. My skillset includes C/C++, Python, Java, web development, SQL, Git, Docker, and Linux. For more information, please view my <a href="/resume">résumé</a>.</p>
+        </section>
+        <section id="projects">
+            <h2>Select Projects</h2>
+            <ul>
+                <li><a href="https://mathcontestrepository.pythonanywhere.com">The Math Contest Repository</a> - A collection of nearly 1400 mathematics competition-style problems. 200+ students use this platform and it has hosted 7 math contests.</li>
+                <li><a href="https://clonioai.guessoword.com">Clonio AI</a> - A safe LLM tool which can transform anyone into an AI chatbot, using DM/text conversations as training data. Helpful to estimate reactions or practice before an important conversation.</li>
+            </ul>
+            <p style="border-top:1px solid #ddd; padding-top: 0.8rem;">I encourage you to check out my full list of projects <a href="/projects">here</a>.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:savirsinghwork@gmail.com">savirsinghwork@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/savirss">linkedin.com/in/savirss</a></p>
+            <p>Feel free to contact or connect with me if you have any questions or opportunities.</p>
+        </section>
