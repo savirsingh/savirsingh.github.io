@@ -1,43 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>{{ page.title }} | Savir Singh</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Savir Singh</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/whitelogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-<link rel="icon" href="/whitelogo.png">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
-<header>
-<h1><a style="text-decoration: none" href="/">Savir Singh</a></h1>
-<ul>
-<li><a href="/">About Me</a></li>
-<li><a href="/resume">Résumé</a></li>
-<li><a href="/projects">Projects</a></li>
-<li><a href="/blog">Writing</a></li>
-<li id="theme-toggle"><i class="fas fa-adjust"></i></li>
-</ul>
-</header>
-
-<br><br><br><br><main>
-{{ content }}
-
-</main>
-
-<footer>
-<p>&copy 2021-2024 Savir Singh. All rights reserved.</p>
-<div class="social">
+    <header>
+        <h1>Savir Singh</h1>
+        <p>Software Developer, GWSS '25</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/resume">Résumé</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/blog">Writing</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a Canadian high school student interested in computer science, engineering, and related concepts. I enjoy building things and programming.</p> <p>From January to April 2024, I was working as a student researcher and software engineering intern at the University of Waterloo. During this internship, I built a GUI for a terminal-based software security project. I also produced a demo that was presented at <a href="https://conf.researchr.org/home/icse-2024">the International Conference on Software Engineering 2024</a>. Prior to that, I was a backend engineer intern at American Inn Ozark, where I worked closely with staff to build <a href="https://www.americaninnozark.com">their beta-stage website</a>, as well as a customizable real-time pinging system to notify hotel management of new reservations (this was my innovation).</p>
+            <p>In my free time, you will find me developing software, creating new technologies, participating in competitive programming competitions, doing math, or reading. My skillset includes C/C++, Python, Java, web development, SQL, Git, Docker, and Linux. For more information, please view my <a href="/resume">résumé</a>.</p>
+        </section>
+        <section id="projects">
+            <h2>Select Projects</h2>
+            <ul>
+                <li><a href="https://mathcontestrepository.pythonanywhere.com">The Math Contest Repository</a> - A collection of nearly 1400 mathematics competition-style problems. 200+ students use this platform and it has hosted 7 math contests.</li>
+                <li><a href="https://clonioai.guessoword.com">Clonio AI</a> - A safe LLM tool which can transform anyone into an AI chatbot, using DM/text conversations as training data. Helpful to estimate reactions or practice before an important conversation.</li>
+            </ul>
+            <p style="border-top:1px solid #ddd; padding-top: 0.8rem;">I encourage you to check out my full list of projects <a href="/projects">here</a>.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:savirsinghwork@gmail.com">savirsinghwork@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/savirss">linkedin.com/in/savirss</a></p>
+            <p>Feel free to contact or connect with me if you have any questions or opportunities.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2021-2024 Savir Singh. All rights reserved.</p>
+        <div class="social">
 <a href="https://linkedin.com/in/savirss" class="social-icon"><i class="fab fa-linkedin"></i></a>
 <a href="https://github.com/savirsingh" class="social-icon"><i class="fab fa-github"></i></a>
 <a href="https://twitter.com/kopichiki" class="social-icon"><i class="fab fa-twitter"></i></a>
 </div>
-<br><br>
-</footer>
-
-<script src="/script.js"></script>
+    </footer>
 </body>
 </html>
