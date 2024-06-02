@@ -13,24 +13,22 @@
 </head>
 <body>
     <header>
-        <h1>Savir Singh</h1>
-        <p>Software Developer, GWSS '25</p>
-    </header>
+    <p class="name"><a href="/">Savir Singh</a></p>
     <nav>
         <ul>
-            <li><a href="/">Home</a></li>
             <li><a href="/resume">Résumé</a></li>
             <li><a href="/projects">Projects</a></li>
             <li><a href="/blog">Writing</a></li>
         </ul>
     </nav>
+</header>
     <main>
         {{content}}<br>
         <p>Last updated: {{ page.date | date: "%B %-d, %Y" }}</p>
         <p>To read more of my writing, view <a href="/blog">all my posts</a>.</p>
     </main>
     <footer>
-        <p>&copy; 2021-2024 Savir Singh. All rights reserved.</p>
+        <p>&copy; 2021-2024 Savir Singh.</p>
         <div class="social">
 <a href="https://linkedin.com/in/savirss" class="social-icon"><i class="fab fa-linkedin"></i></a>
 <a href="https://github.com/savirsingh" class="social-icon"><i class="fab fa-github"></i></a>
