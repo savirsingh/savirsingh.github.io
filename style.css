@@ -8,13 +8,19 @@ body {
 }
 
 header, main, footer {
-    max-width: 800px;
+    max-width: 880px;
     margin: 0 auto;
     padding: 1rem;
 }
 
 header {
-    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensures vertical alignment */
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
 }
 
 header h1 {
@@ -23,14 +29,17 @@ header h1 {
 
 nav {
     background-color: #fff;
-    border-bottom: 1px solid #ddd;
+}
+
+.name {
+    margin: 0; /* Removes default margin from <p> */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; /* Ensures links are aligned to the right */
     margin: 0;
 }
 
@@ -40,7 +49,15 @@ nav ul li {
 
 a {
     text-decoration: none;
-    color: #0366d6;
+    color: #3e39bf;
+}
+
+header a {
+    color: black;
+}
+
+header a:hover {
+    color: #3e39bf;
 }
 
 a:hover {
@@ -72,12 +89,18 @@ main ul li a:hover {
 }
 
 footer {
-    text-align: center;
-    padding: 1rem 0;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensures vertical alignment */
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
     border-top: 1px solid #ddd;
     margin-top: 2rem;
-    background-color: #fff;
+    padding: 1rem 0;
 }
+
 
 footer .social-icon {
   font-size: 36px;
