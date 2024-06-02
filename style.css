@@ -79,11 +79,6 @@ main ul li {
     margin-bottom: 0.5rem;
 }
 
-main ul li a {
-    text-decoration: none;
-    color: #0366d6;
-}
-
 main ul li a:hover {
     text-decoration: underline;
 }
