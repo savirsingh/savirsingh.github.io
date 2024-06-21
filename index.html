@@ -4,21 +4,35 @@ title: Home
 ---
 
 <section id="about">
-            <h2>About Me</h2>
-            <p>I'm a Canadian high school student interested in computer science, engineering, and related concepts. I enjoy building things and programming.</p> <p>From January to April 2024, I was working as a student researcher and software engineering intern at the University of Waterloo. During this internship, I gained experience building a GUI for a terminal-based software security project. In addition, I produced a demo that was presented at <a href="https://conf.researchr.org/home/icse-2024">the International Conference on Software Engineering (ICSE) 2024</a>. Prior to that, I was a backend engineer intern at American Inn Ozark, where I worked closely with staff to build <a href="https://www.americaninnozark.com">their beta-stage website</a>, as well as a customizable real-time notification system to inform hotel management about new reservations (this was my innovation).</p>
-            <p>In my free time, you will find me developing software, creating new technologies, participating in competitive programming competitions, doing math, listening to classical music, or reading. I also enjoy playing tennis and squash! My skillset includes C/C++, Python, Java, web development, SQL, Git, Docker, and Linux. For more information, please view my <a href="/resume">résumé</a>.</p>
-        </section>
-        <section id="projects">
-            <h2>Select Projects</h2>
-            <ul>
-                <li><a href="https://mathcontestrepository.pythonanywhere.com">The Math Contest Repository</a> - A collection of nearly 1400 mathematics competition-style problems. 200+ students use this platform and it has hosted 7 math contests.</li>
-                <li><a href="https://clonioai.guessoword.com">Clonio AI</a> - A safe LLM tool which can transform anyone into an AI chatbot, using DM/text conversations as training data. Helpful to estimate reactions or practice before an important conversation.</li>
-            </ul>
-            <p style="border-top:1px solid #ddd; padding-top: 0.8rem;">I encourage you to check out my full list of projects <a href="/projects">here</a>.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:savirsinghwork@gmail.com">savirsinghwork@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/savirss">linkedin.com/in/savirss</a></p>
-            <p>Feel free to contact or connect with me if you have any questions or opportunities.</p>
-        </section>
+    <h2>About Me</h2>
+    <p>I'm a Canadian high school student interested in computer science, engineering, and related concepts. I enjoy building things and programming.</p>
+    <p>From January to April 2024, I was working as a student researcher and software engineering intern at the University of Waterloo. During this internship, I gained experience building a GUI for a terminal-based software security project. In addition, I produced a demo that was presented at <a href="https://conf.researchr.org/home/icse-2024">the International Conference on Software Engineering (ICSE) 2024</a>. Prior to that, I was a backend engineer intern at American Inn Ozark, where I worked closely with staff to build <a href="https://www.americaninnozark.com">their beta-stage website</a>, as well as a customizable real-time notification system to inform hotel management about new reservations (this was my innovation).</p>
+    <p>In my free time, you will find me developing software, creating new technologies, participating in competitive programming competitions, doing math, listening to classical music, or reading. I also enjoy playing tennis and squash! My skillset includes C/C++, Python, Java, web development, SQL, Git, Docker, and Linux. For more information, please view my <a href="/resume">résumé</a>.</p>
+</section>
+
+<section id="projects">
+    <h2>Select Projects</h2>
+    <ul>
+        <li><a href="https://mathcontestrepository.pythonanywhere.com">The Math Contest Repository</a> - A collection of nearly 1400 mathematics competition-style problems. 200+ students use this platform and it has hosted 7 math contests.</li>
+        <li><a href="https://clonioai.guessoword.com">Clonio AI</a> - A safe LLM tool which can transform anyone into an AI chatbot, using DM/text conversations as training data. Helpful to estimate reactions or practice before an important conversation.</li>
+    </ul>
+    <p style="border-top:1px solid #ddd; padding-top: 0.8rem;">I encourage you to check out my full list of projects <a href="/projects">here</a>.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <span id="email"></span></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/savirss">linkedin.com/in/savirss</a></p>
+    <p>Feel free to contact or connect with me if you have any questions or opportunities.</p>
+</section>
+
+<script type="text/javascript">
+    // Function to obfuscate email address
+    function obfuscateEmail(user, domain) {
+        var emailLink = user + '&#64;' + domain;
+        document.getElementById('email').innerHTML = '<a href="mailto:' + emailLink + '">' + emailLink + '</a>';
+    }
+
+    // Call the function with your email parts
+    obfuscateEmail('savirsinghwork', 'gmail.com');
+</script>
