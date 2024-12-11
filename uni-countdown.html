@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanford 2024 REA Decision Countdown</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #8C1515; /* Stanford Cardinal Red */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            max-width: 90%;
+            width: 500px; /* Limit the max-width to ensure proper layout on large screens */
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .countdown {
+            font-size: 48px;
+            font-weight: bold;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            justify-items: center;
+            margin-top: 20px;
+        }
+
+        .countdown span {
+            background-color: #B2B2B2;
+            padding: 15px;
+            border-radius: 5px;
+            min-width: 80px;
+            text-align: center;
+        }
+
+        .countdown-labels {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 5px;
+            font-size: 14px;
+            font-weight: normal;
+        }
+
+        .countdown-labels div {
+            text-align: center;
+        }
+
+        .tree-icon {
+            font-size: 100px;
+            color: #00C853;
+            margin-top: 30px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 18px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            .countdown {
+                font-size: 36px; /* Smaller font size for mobile */
+                grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
+            }
+
+            .countdown-labels {
+                grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
+            }
+
+            .countdown span {
+                padding: 10px;
+                font-size: 24px;
+                min-width: 60px;
+            }
+
+            .countdown-labels div {
+                font-size: 12px; /* Smaller label text on mobile */
+            }
+
+            h1 {
+                font-size: 28px; /* Smaller heading on mobile */
+            }
+
+            .tree-icon {
+                font-size: 80px; /* Smaller tree icon on mobile */
+            }
+
+            .footer {
+                font-size: 16px; /* Smaller footer text */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>I will be a tree in...</h1>
+        <div id="countdown" class="countdown">
+            <span id="days"></span>
+            <span id="hours"></span>
+            <span id="minutes"></span>
+            <span id="seconds"></span>
+        </div>
+        <div class="countdown-labels">
+            <div>Days</div>
+            <div>Hours</div>
+            <div>Minutes</div>
+            <div>Seconds</div>
+        </div>
+        <div class="tree-icon">🌲</div>
+        <div class="footer">
+            <p>Stanford REA Decision: December 13, 2024 at 4 PM PST</p>
+        </div>
+    </div>
+
+    <script>
+        function updateCountdown() {
+            const targetDate = new Date("December 13, 2024 16:00:00 PST").getTime();
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            if (distance <= 0) {
+                document.getElementById("countdown").innerHTML = "Decision Time!";
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+</html>
