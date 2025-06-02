@@ -5,10 +5,16 @@ body {
     padding: 0;
     background-color: #fff;
     color: #333;
+    font-size: 20px;
 }
 
-header, main, footer {
-    max-width: 880px;
+main, footer {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header {
     margin: 0 auto;
     padding: 1rem;
 }
@@ -20,7 +26,44 @@ header {
     justify-content: space-between;
     align-items: center; /* Ensures vertical alignment */
     border-bottom: 1px solid #ddd;
-    font-size: 18px;
+    font-size: 24px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+    max-width: 80%;
+}
+
+header.sticky {
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    animation: slideDown 0.3s ease-out;
+    max-width: 100%;
+    opacity: 0.88;
+}
+
+header.unsticky {
+    animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
 }
 
 header h1 {
@@ -68,6 +111,7 @@ main h2 {
     border-bottom: 1px solid #ddd;
     padding-bottom: 0.25rem;
     margin-bottom: 0.75rem;
+    font-size: 26px;
 }
 
 main ul {
@@ -90,7 +134,7 @@ footer {
     justify-content: space-between;
     align-items: center; /* Ensures vertical alignment */
     border-bottom: 1px solid #ddd;
-    font-size: 18px;
+    font-size: 22px;
     border-top: 1px solid #ddd;
     margin-top: 2rem;
     padding: 1rem 0;
@@ -100,4 +144,144 @@ footer {
 footer .social-icon {
   font-size: 28px;
   padding: 8px;
+}
+
+/* Base dark blue highlight color */
+::selection {
+  background-color: #001f4d; /* Dark navy blue */
+  color: white;
+}
+
+/* For Mozilla Firefox */
+::-moz-selection {
+  background-color: #001f4d;
+  color: white;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-photo {
+    flex: 1;
+    max-width: 100%;
+}
+
+.about-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-photo figcaption {
+    font-size: 18px;
+    color: #666;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Responsive layout for wider screens */
+@media (min-width: 768px) {
+    .about-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .about-photo {
+        max-width: 40%;
+        margin-left: 2rem;
+    }
+}
+
+/* --- Hamburger button style --- */
+.hamburger {
+  display: none; /* hidden by default */
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: black;
+}
+
+/* Mobile-first tweaks */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    main, footer, header {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 26px;
+        cursor: pointer;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    nav ul.nav-links.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-text, .about-photo {
+        text-align: center;
+    }
+
+    .about-photo img {
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    footer .social {
+        margin-top: 0.5rem;
+    }
+
+    header.sticky {
+        animation: none;
+    }
+
+    header.unsticky {
+        animation: none;
+    }
 }
