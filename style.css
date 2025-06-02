@@ -36,12 +36,15 @@ header {
 }
 
 header.sticky {
-    position: fixed;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    animation: slideDown 0.3s ease-out;
-    max-width: 100%;
-    opacity: 0.88;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  opacity: 0.88;
+  background: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 header.unsticky {
@@ -284,4 +287,60 @@ footer .social-icon {
     header.unsticky {
         animation: none;
     }
+    
+    .internship-table {
+  font-size: 16px;
+  border-spacing: 0 0.5rem;
+}
+
+.internship-table td {
+  display: block;
+  width: 100%;
+  text-align: left !important;
+  padding: 0.25rem 0;
+}
+
+.internship-table .dates {
+  text-align: left !important;
+  margin-top: -0.5rem;
+  font-size: 14px;
+}
+
+}
+
+.internships {
+  margin-top: 3rem;
+  padding: 1rem 0;
+}
+
+.internship-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 0.75rem;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.internship-table td {
+  vertical-align: top;
+}
+
+.internship-table tr {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.internship-table .company {
+  font-weight: 600;
+  width: 70%;
+}
+
+.internship-table .dates {
+  text-align: right;
+  white-space: nowrap;
+  font-style: italic;
+  color: #444;
 }
