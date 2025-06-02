@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +15,11 @@
 <body>
     <header>
     <p class="name"><a href="/">Savir Singh</a></p>
+    <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+    </button>
     <nav>
-        <ul>
+        <ul id="nav-links" class="nav-links">
             <li><a href="/resume">Résumé</a></li>
             <li><a href="/projects">Projects</a></li>
             <li><a href="/blog">Writing</a></li>
@@ -33,5 +37,38 @@
 <a href="https://x.com/savirwastaken" class="social-icon"><i class="fab fa-x-twitter"></i></a>
 </div>
     </footer>
+    <script>
+  let lastScrollY = window.scrollY;
+  let header = document.querySelector("header");
+  let isSticky = false;
+
+  window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > 50 && !isSticky) {
+      header.classList.remove("unsticky");
+      header.classList.add("sticky");
+      isSticky = true;
+    } else if (currentScrollY <= 0 && isSticky) {
+      header.classList.remove("sticky");
+      header.classList.add("unsticky");
+      isSticky = false;
+    }
+
+    lastScrollY = currentScrollY;
+  });
+  
+      const hamburger = document.getElementById('hamburger');
+const nav = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+  nav.classList.toggle('active');
+
+  // Toggle aria-expanded for accessibility
+  const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+  hamburger.setAttribute('aria-expanded', !expanded);
+});
+</script>
+
 </body>
 </html>
