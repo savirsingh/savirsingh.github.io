@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>{{ page.title }} | Savir Singh</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Savir Singh</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/whitelogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-<link rel="icon" href="/whitelogo.png">
+<link href="https://fonts.googleapis.com/css2?family=Source%20Sans%203&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-<header>
-<h1><a style="text-decoration: none" href="/">Savir Singh</a></h1>
-<ul>
-<li><a href="/">About Me</a></li>
-<li><a href="/resume">Résumé</a></li>
-<li><a href="/projects">Projects</a></li>
-<li><a href="/blog">Writing</a></li>
-<li id="theme-toggle"><i class="fas fa-adjust"></i></li>
-</ul>
+    <header>
+    <p class="name"><a href="/">Savir Singh</a></p>
+    <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+    </button>
+    <nav>
+        <ul id="nav-links" class="nav-links">
+            <li><a href="/resume">Résumé</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/blog">Writing</a></li>
+        </ul>
+    </nav>
 </header>
 
 <br><br><br><br><main>
@@ -29,15 +32,45 @@
 </main>
 
 <footer>
-<p>&copy 2021-2025 Savir Singh. All rights reserved.</p>
-<div class="social">
+        <p>&copy; 2021-2025 Savir Singh.</p>
+        <div class="social">
 <a href="https://linkedin.com/in/savirss" class="social-icon"><i class="fab fa-linkedin"></i></a>
 <a href="https://github.com/savirsingh" class="social-icon"><i class="fab fa-github"></i></a>
 <a href="https://x.com/savirwastaken" class="social-icon"><i class="fab fa-x-twitter"></i></a>
 </div>
-<br><br>
-</footer>
+    </footer>
+    <script>
+  let lastScrollY = window.scrollY;
+  let header = document.querySelector("header");
+  let isSticky = false;
 
-<script src="/script.js"></script>
+  window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > 50 && !isSticky) {
+      header.classList.remove("unsticky");
+      header.classList.add("sticky");
+      isSticky = true;
+    } else if (currentScrollY <= 0 && isSticky) {
+      header.classList.remove("sticky");
+      header.classList.add("unsticky");
+      isSticky = false;
+    }
+
+    lastScrollY = currentScrollY;
+  });
+  
+      const hamburger = document.getElementById('hamburger');
+const nav = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+  nav.classList.toggle('active');
+
+  // Toggle aria-expanded for accessibility
+  const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+  hamburger.setAttribute('aria-expanded', !expanded);
+});
+</script>
+
 </body>
 </html>
