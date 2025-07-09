@@ -346,9 +346,9 @@ footer .social-icon {
 }
 
 /* === DARK MODE === */
-body.dark,body.dark .internship-table tr {
-  background-color: #121212;
-  color: #f0f0f0;
+body.dark header, body.dark nav, body.dark,body.dark .internship-table tr {
+  background-color: #171717;
+  color: #D3D3D3;
 }
 
 body.dark a {
@@ -359,16 +359,13 @@ body.dark a:hover {
   color: #a0c8ff;
 }
 
-body.dark header,
 body.dark nav {
-  background-color: #1e1e1e;
   border-color: #444;
 }
 
 body.dark header a,
-body.dark nav a,
 body.dark footer {
-  color: #f0f0f0;
+  color: #D3D3D3;
 }
 
 body.dark .about-photo figcaption {
@@ -400,7 +397,7 @@ body.dark ::-moz-selection {
 }
 
 body.dark #theme-toggle {
-  color: #f0f0f0;
+  color: #D3D3D3;
 }
 
 nav ul li button#theme-toggle {
