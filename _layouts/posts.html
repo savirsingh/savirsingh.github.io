@@ -48,13 +48,6 @@
   </footer>
 
   <script>
-    // Email obfuscation
-    function obfuscateEmail(user, domain) {
-      const emailLink = user + '&#64;' + domain;
-      document.getElementById('email').innerHTML = '<a href="mailto:' + emailLink + '">' + emailLink + '</a>';
-    }
-    obfuscateEmail('savir.singh', 'mail.utoronto.ca');
-
     //sticky header
     let lastScrollY = window.scrollY;
     const header = document.querySelector("header");
