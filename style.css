@@ -344,3 +344,73 @@ footer .social-icon {
   font-style: italic;
   color: #444;
 }
+
+/* === DARK MODE === */
+body.dark,body.dark .internship-table tr {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark a {
+  color: #8ab4f8;
+}
+
+body.dark a:hover {
+  color: #a0c8ff;
+}
+
+body.dark header,
+body.dark nav {
+  background-color: #1e1e1e;
+  border-color: #444;
+}
+
+body.dark header a,
+body.dark nav a,
+body.dark footer {
+  color: #f0f0f0;
+}
+
+body.dark .about-photo figcaption {
+  color: #bbb;
+}
+
+body.dark .internship-table .dates {
+  color: #aaa;
+}
+
+body.dark .social-icon {
+  color: #f0f0f0;
+}
+
+body.dark ::selection,
+body.dark ::-moz-selection {
+  background-color: #004080;
+  color: white;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+body.dark #theme-toggle {
+  color: #f0f0f0;
+}
+
+nav ul li button#theme-toggle {
+  margin-left: 1rem;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  nav ul li button#theme-toggle {
+    margin: 0.5rem auto;
+    font-size: 22px;
+  }
+}
