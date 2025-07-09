@@ -380,6 +380,10 @@ body.dark .social-icon {
   color: #f0f0f0;
 }
 
+body.dark .social-icon:hover {
+  color: #f0f0f0;
+}
+
 body.dark ::selection,
 body.dark ::-moz-selection {
   background-color: #004080;
