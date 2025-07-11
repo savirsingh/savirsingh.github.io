@@ -355,10 +355,6 @@ body.dark a {
   color: #8ab4f8;
 }
 
-body.dark a:hover {
-  color: #a0c8ff;
-}
-
 body.dark nav {
   border-color: #444;
 }
