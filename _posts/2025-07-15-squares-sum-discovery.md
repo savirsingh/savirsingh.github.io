@@ -31,11 +31,13 @@ $$
 We know that $\left( \sum_{i=1}^{N} (2i - 1) \right) = N^2$ because the sum of the first $N$ odd natural numbers is $N^2$ (a fact we discussed earlier in this post).
 
 Then,
+
 $$
 \begin{align*} \sum_{i=1}^{N} i^2 &= N^3 - \sum_{i=1}^{N-1} i(2i + 1) \\  &=N^3-2\sum_{i=1}^{N} i^2 - \sum_{i=1}^{N} i + 2N^2 + N\\\implies 3\sum_{i=1}^{N} i^2 &=N^3-\sum_{i=1}^{N} i+N(2N+1)\end{align*}
 $$
 
 [Recall that](https://en.wikipedia.org/wiki/1_+_2_+_3_+_4_+_%E2%8B%AF) $\sum_{i=1}^{N} i = \frac{N(N+1)}{2}$:
+
 $$
 \begin{align*}
 3\sum_{i=1}^{N} i^2 &= N^3 - \frac{N(N+1)}{2} + N(2N+1) \\
