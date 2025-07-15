@@ -2,7 +2,8 @@
 layout: post
 title:  "How I Discovered the Sum of Squares Formula Over Dinner"
 date:   2025-07-15 11:32:15 -0400
-categories: Math
+categories: math
+tags: [math, algebra, number-theory, discrete-math]
 ---
 
 {% include mathjax.html %}
@@ -27,6 +28,7 @@ $$1^2+2^2+3^2=1+4+9=(1)+(1+3)+(1+3+5)$$
 We note that the number $1$ appears in the sum three times, $3$ appears twice, and $5$ appears only once. The pattern is obvious here because each perfect square is simply the previous perfect square plus the next odd natural number.
 
 Thus, we deduce that:
+
 $$\begin{align*}\sum_{i=1}^{N} i^2 = \sum_{i=1}^{N} (2i - 1)(N + 1 - i	)\\\implies \sum_{i=1}^{N} i^2 = \left( \sum_{i=1}^{N} (2i - 1) \right) N - \sum_{i=1}^{N-1} i(2i + 1)\end{align*}
 $$
 
