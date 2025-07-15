@@ -21,7 +21,9 @@ Note that I will not focus on presenting a formal mathematical proof here, rathe
 To start, recall (or, as I did, discover after about an hour of playing around) that the sum of the first $N$ odd natural numbers is $N^2$. If you've never heard of this before, it's a good idea to verify it yourself, since the entire derivation stems from this fact.
 
 For instance:
+
 $$1^2+2^2+3^2=1+4+9=(1)+(1+3)+(1+3+5)$$
+
 We note that the number $1$ appears in the sum three times, $3$ appears twice, and $5$ appears only once. The pattern is obvious here because each perfect square is simply the previous perfect square plus the next odd natural number.
 
 Thus, we deduce that:
@@ -49,6 +51,7 @@ $$
 $$
 
 Dividing both sides by 3 gives us the final result:
+
 $$
 \sum_{i=1}^{N} i^2 = \frac{2N^3 + 3N^2 + N}{6} = \frac{N(N+1)(2N+1)}{6}
 $$
