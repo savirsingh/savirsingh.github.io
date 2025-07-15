@@ -33,11 +33,22 @@
       color: #555;
     }
 
+    body.dark blockquote {
+      background: #1e1e1e;
+      color: #ccc;
+      border-left-color: #666;
+    }
+
     code, pre {
       font-family: 'Fira Code', monospace;
       background: #f4f4f4;
       padding: 0.2em 0.4em;
       border-radius: 4px;
+    }
+
+    body.dark code, body.dark pre {
+      background: #2c2c2c;
+      color: #eee;
     }
 
     pre {
@@ -67,6 +78,12 @@
       border-radius: 4px;
     }
 
+    body.dark .meta-tags span,
+    body.dark .meta-categories span {
+      background: #333;
+      color: #ccc;
+    }
+
     .post-footer {
       margin-top: 3rem;
       border-top: 1px solid #ddd;
@@ -74,6 +91,12 @@
       font-size: 0.95rem;
       color: #666;
     }
+
+    body.dark .post-footer {
+      border-top-color: #444;
+      color: #aaa;
+    }
+
 
     .post-footer a {
       color: #007acc;
