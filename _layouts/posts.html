@@ -78,6 +78,45 @@
         margin-bottom: 0.3rem;
       }
     }
+
+    #search-input:focus {
+      outline: none;
+    }
+
+    /* DARK MODE STYLES */
+    body.dark {
+      background-color: #121212;
+      color: #eee;
+    }
+
+    body.dark #search-input {
+      background-color: #1e1e1e;
+      color: #eee;
+      border: 1px solid #333;
+    }
+
+    body.dark .post-entry {
+      border-bottom: 1px solid #333;
+    }
+
+    body.dark .post-entry h2 a {
+      color: #4dabf7;
+    }
+
+    body.dark .post-meta {
+      color: #bbb;
+    }
+
+    body.dark .tag,
+    body.dark .category {
+      background: #2e2e2e;
+      color: #ccc;
+    }
+
+    body.dark .post-excerpt {
+      color: #ddd;
+    }
+
   </style>
 </head>
 <body>
@@ -120,9 +159,6 @@
               <span class="tag">{{ tag }}</span>
             {% endfor %}
           {% endif %}
-        </div>
-        <div class="post-excerpt">
-          {{ post.excerpt | strip_html | truncate: 200 }}
         </div>
       </div>
       {% endfor %}
