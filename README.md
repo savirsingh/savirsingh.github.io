@@ -52,9 +52,13 @@ This repository powers my personal site: **savirsingh.com**. Built with [Jekyll]
    ```
 4. Visit `http://localhost:4000/` to preview.
 
+---
+
 ## Deployment
 - Built and deployed automatically by GitHub Pages
 - Custom domain configured (via `CNAME` file & DNS records)
+
+---
 
 ## Folder Structure
 ```
@@ -69,8 +73,12 @@ personal-website/
 └── style.css              # global styles
 ```
 
+---
+
 ## Contributing
 Feel free to open issues or submit PRs for bug fixes or enhancements. Suggestions welcome: theme tweaks, pagination, feeds, etc.
+
+---
 
 ## License & Attribution
 - Source code under MIT License
