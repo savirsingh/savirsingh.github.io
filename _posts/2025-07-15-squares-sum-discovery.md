@@ -8,7 +8,9 @@ tags: [math, algebra, number-theory, discrete-math]
 
 {% include mathjax.html %}
 
-It started with a casual dinner at a restaurant with my parents and sister. As always, I brought with me my notebook, two pens, and a brain that refuses to stop thinking, A few moments after sitting down, a curious question struck me and followed me home. I worked on it at the dinner table, in the car, and in my room well into that night. What's the sum of the first $n$ perfect squares? I'd never seen the formula before, let alone any derivation. Most textbook derivations rely on advanced algebraic identities or clever manipulations I didn't know at the time. But that day, I found a way that was intuitive and deeply satisfying. What follows is one of my proudest little mathematical discoveries from high school.
+It started with a casual dinner at a restaurant with my parents and sister. As always, I brought with me my notebook, two pens, and a brain that refuses to stop thinking. 
+<!--more-->
+A few moments after sitting down, a curious question struck me and followed me home. I worked on it at the dinner table, in the car, and in my room well into that night. What's the sum of the first $n$ perfect squares? I'd never seen the formula before, let alone any derivation. Most textbook derivations rely on advanced algebraic identities or clever manipulations I didn't know at the time. But that day, I found a way that was intuitive and deeply satisfying. What follows is one of my proudest little mathematical discoveries from high school.
 
 Problem at hand:
 
