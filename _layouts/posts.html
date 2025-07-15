@@ -160,6 +160,9 @@
             {% endfor %}
           {% endif %}
         </div>
+        <div class="post-excerpt">
+          {{ post.excerpt | strip_html | truncate: 200 }}
+        </div>
       </div>
       {% endfor %}
     </div>
