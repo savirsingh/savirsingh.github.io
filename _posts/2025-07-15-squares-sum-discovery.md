@@ -10,11 +10,11 @@ tags: [math, algebra, number-theory, discrete-math]
 
 It started with a casual dinner at a restaurant with my parents and sister. As always, I brought with me my notebook, two pens, and a brain that refuses to stop thinking. 
 <!--more-->
-A few moments after sitting down, a curious question struck me and followed me home. I worked on it at the dinner table, in the car, and in my room well into that night. What's the sum of the first $n$ perfect squares? I'd never seen the formula before, let alone any derivation. Most textbook derivations rely on advanced algebraic identities or clever manipulations I didn't know at the time. But that day, I found a way that was intuitive and deeply satisfying. What follows is one of my proudest little mathematical discoveries from high school.
+A few moments after sitting down, a curious question struck me and followed me home. I worked on it at the dinner table, in the car, and in my room well into that night. What's the sum of the first $N$ perfect squares? I'd never seen the formula before, let alone any derivation. Most textbook derivations rely on advanced algebraic identities or clever manipulations I didn't know at the time. But that day, I found a way that was intuitive and deeply satisfying. What follows is one of my proudest little mathematical discoveries from high school.
 
 Problem at hand:
 
-> Can we find a closed-form formula for the sum of the first $n$ perfect squares?
+> Can we find a closed-form formula for the sum of the first $N$ perfect squares?
 
 Note that I will not focus on presenting a formal mathematical proof here, rather I'll simplify my derivation as much as possible, to ensure any audience with a basic mathematical acumen can understand it.
 
@@ -51,7 +51,7 @@ $$
 \end{align*}
 $$
 
-Dividing both sides by 3 gives us the final result:
+Dividing both sides by $3$ gives us the final result:
 
 $$
 \sum_{i=1}^{N} i^2 = \frac{2N^3 + 3N^2 + N}{6} = \frac{N(N+1)(2N+1)}{6}
