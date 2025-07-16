@@ -18,7 +18,7 @@ Problem at hand:
 
 Note that I will not focus on presenting a formal mathematical proof here, rather I'll simplify my derivation as much as possible, to ensure any audience with a basic mathematical acumen can understand it.
 
-To start, recall (or, as I did, discover after about an hour of playing around) that the sum of the first $N$ odd natural numbers is $N^2$. If you've never heard of this before, it's a good idea to verify it yourself, since the entire derivation stems from this fact.
+To start, recall (or, as I did, discover after about about 20 minutes of playing around) that the sum of the first $N$ odd natural numbers is $N^2$. If you've never heard of this before, it's a good idea to verify it yourself, since the entire derivation stems from this fact.
 
 For instance:
 
