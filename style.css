@@ -372,6 +372,10 @@ body.dark footer .social-icon {
     color: #edc255;
 }
 
+body.dark footer .social-icon:hover {
+    color: #edc255;
+}
+
 body.dark .about-photo figcaption {
   color: #bbb;
 }
