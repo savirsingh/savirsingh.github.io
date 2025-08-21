@@ -106,6 +106,10 @@ header a:hover {
     color: #3e39bf;
 }
 
+body.dark header a:hover {
+    color: #8ab4f8;
+}
+
 a:hover {
     text-decoration: underline;
 }
