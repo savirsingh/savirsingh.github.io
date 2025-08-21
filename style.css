@@ -368,6 +368,10 @@ body.dark footer {
   color: #D3D3D3;
 }
 
+body.dark footer .social-icon {
+    color: #edc255;
+}
+
 body.dark .about-photo figcaption {
   color: #bbb;
 }
