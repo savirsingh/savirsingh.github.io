@@ -210,10 +210,7 @@
     const themeToggle = document.getElementById("theme-toggle");
     const themeIcon = document.getElementById("theme-icon");
     const savedTheme = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const isDark = savedTheme === "dark" || (!savedTheme && prefersDark);
-
-    if (isDark) {
+    if (savedTheme === "dark") {
       document.body.classList.add("dark");
       themeIcon.classList.remove("fa-sun");
       themeIcon.classList.add("fa-moon");
