@@ -1,6 +1,7 @@
 title: Savir Singh
 markdown: kramdown
 baseurl: "/"
+url: "https://savirsingh.com"
 
 paginate: 5
 paginate_path: "/posts/page:num/"
