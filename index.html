@@ -41,18 +41,7 @@ title: Home
 
 <section id="contact">
     <h2>Contact Me</h2>
-    <p>Email: <span id="email"></span></p>
+    <p>Email: me [at] savirsingh [dot] com</p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/savirss">linkedin.com/in/savirss</a></p>
     <p>Feel free to reach out if you have any opportunities or questions!</p>
 </section>
-
-<script type="text/javascript">
-    // Function to obfuscate email address
-    function obfuscateEmail(user, domain) {
-        var emailLink = user + '&#64;' + domain;
-        document.getElementById('email').innerHTML = '<a href="mailto:' + emailLink + '">' + emailLink + '</a>';
-    }
-
-    // Call the function with your email parts
-    obfuscateEmail('me', 'savirsingh.com');
-</script>
