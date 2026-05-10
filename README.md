@@ -82,5 +82,5 @@ Feel free to open issues or submit PRs for bug fixes or enhancements. Suggestion
 
 ## License & Attribution
 - Source code under MIT License
-- Design, writing, and content © 2021–2025 Savir Singh
+- Design, writing, and content © 2021–2026 Savir Singh
 - Powered by Jekyll, Font Awesome, and open-source fonts
