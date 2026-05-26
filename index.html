@@ -3,47 +3,87 @@ layout: default
 title: Home
 ---
 
-<section id="about">
-  <h2>Hello, I'm Savir Singh!</h2>
-  <div class="about-container">
-    <div class="about-text">
-      <p>I'm a Computer Science and Mathematics student at the University of Toronto (St. George). At UofT, I lead the Algorithmic Trading Society (UTATS), expected to launch in 2026-2027. You might be interested in my <a href="/resume">résumé</a> and my <a href="/projects">projects</a>, or my <a href="https://github.com/savirsingh">GitHub profile</a>.</p>
-      <p>I'm interested in software engineering, systems, security, and finance. Outside of school, I build software, experiment with hardware such as microcomputers and sensors, and play tennis.</p>
-      <p>I'm <a href="https://linkedin.com/in/savirss">seeking</a> Summer 2027 internships. Previously, I've interned at:</p>
-  <table class="internship-table">
-    <tbody>
-      <tr>
-        <td class="company"><a href="https://kpmg.com">KPMG</a> (AI agents, security, compliance)</td>
-        <td class="dates">May 2026 – Sep 2026</td>
-      </tr>
-      <tr>
-        <td class="company"><a href="https://www.generalrobotics.company">General Robotics</a> (research, ML models)</td>
-        <td class="dates">Sep 2024 – Dec 2024</td>
-      </tr>
-      <tr>
-        <td class="company"><a href="https://cs.uwaterloo.ca">UWaterloo</a> (research, software security)</td>
-        <td class="dates">Jan 2024 – Apr 2024</td>
-      </tr>
-    </tbody>
-  </table>
+<section class="intro">
+  <p>
+            Hi, my name is Savir! I'm a Computer Science &amp; Mathematics student at the University of Toronto, specializing in <a href="https://artsci.calendar.utoronto.ca/program/asfoc1689k" target="_blank" rel="noopener">artificial intelligence</a> and the <a href="https://artsci.calendar.utoronto.ca/program/asfoc1689r" target="_blank" rel="noopener">theory of computation</a>. You might be interested in my <a href="/resume">résumé</a> and my <a href="/projects">projects</a>, or my <a href="https://github.com/savirsingh">GitHub profile</a>.
+          </p>
+          <p>
+            Previously, I've interned at <a href="https://kpmg.com" target="_blank" rel="noopener">KPMG</a>, <a href="https://www.generalrobotics.company" target="_blank" rel="noopener">General Robotics</a>, and the <a href="https://cs.uwaterloo.ca" target="_blank" rel="noopener">University of Waterloo</a>. This summer I'm participating in <a href="https://taisi.ca" target="_blank" rel="noopener">TAISI</a>'s AI Safety Summer Intensive hosted by <a href="https://trajectorylabs.org" target="_blank" rel="noopener">Trajectory Labs</a>.
+          </p>
+          <p>
+            Outside school and work, I build software, experiment with hardware such as microcomputers and sensors, and play tennis (both lawn and table). I'm <a href="https://linkedin.com/in/savirss" target="_blank" rel="noopener">seeking</a> Summer 2027 internships in software engineering, systems, security, trading, or finance.
+          </p>
+</section>
+
+<span class="section-label">Experience</span>
+<table class="row-table">
+  <tbody>
+    <tr>
+      <td>
+        <span class="cell-strong"><a href="https://kpmg.com" target="_blank" rel="noopener">KPMG</a></span>
+        <span class="cell-sub">AI Engineering Intern — LLM agents, RAG pipelines, security &amp; compliance</span>
+      </td>
+      <td class="cell-date">May – Sep 2026</td>
+    </tr>
+    <tr>
+      <td>
+        <span class="cell-strong"><a href="https://trajectorylabs.org" target="_blank" rel="noopener">Trajectory Labs (TAISI)</a></span>
+        <span class="cell-sub">Summer Intensive — threat models, mechanistic interpretability, RLHF, scalable oversight</span>
+      </td>
+      <td class="cell-date">Jun 2026</td>
+    </tr>
+    <tr>
+      <td>
+        <span class="cell-strong"><a href="https://www.generalrobotics.company" target="_blank" rel="noopener">General Robotics</a></span>
+        <span class="cell-sub">Software Engineer Intern, AI Research — ML models, visual odometry, robotic perception</span>
+      </td>
+      <td class="cell-date">Sep – Dec 2024</td>
+    </tr>
+    <tr>
+      <td>
+        <span class="cell-strong"><a href="https://cs.uwaterloo.ca" target="_blank" rel="noopener">University of Waterloo</a></span>
+        <span class="cell-sub">Research Assistant &amp; Software Intern — FuzzSlice lab, software security, ICSE 2024</span>
+      </td>
+      <td class="cell-date">Jan – Apr 2024</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="section-label">Selected Projects</span>
+<ul class="proj-list">
+  <li>
+    <div>
+      <span class="proj-name">Clonio AI</span>
+      <span class="proj-tags">Python · Flask · SwiftUI · LLMs · Gemini · NLP</span>
+      <span class="proj-desc">LLM personality-cloning platform. Top 25 Productivity on the US App Store. 1M+ processed messages. $3,500 Ontario government grant.</span>
     </div>
-    <figure class="about-photo">
-      <img src="/assets/grad.jpg" alt="Savir in Banff" />
-      <figcaption>Graduated from high school, June 2025</figcaption>
-    </figure>
-  </div>
-</section>
+    <a class="proj-link" href="https://clonioai.guessoword.com" target="_blank" rel="noopener">visit ↗</a>
+  </li>
+  <li>
+    <div>
+      <span class="proj-name">Math Contest Repository</span>
+      <span class="proj-tags">Python · Flask · Full Stack · Data Modeling</span>
+      <span class="proj-desc">Large-scale contest math platform. 500+ users, 1,400+ problems, 6,000+ submissions. Partnered with Desmos.</span>
+    </div>
+    <a class="proj-link" href="https://mathcontestrepository.pythonanywhere.com" target="_blank" rel="noopener">visit ↗</a>
+  </li>
+  <li>
+    <div>
+      <span class="proj-name">Volcano Judge</span>
+      <span class="proj-tags">C++ · Python · Sandboxing · REST APIs</span>
+      <span class="proj-desc">Sandboxed online competitive programming judge supporting Python 3 and C++20. Deployed for school CS clubs.</span>
+    </div>
+    <a class="proj-link" href="https://github.com/savirsingh/volcano-judge" target="_blank" rel="noopener">github ↗</a>
+  </li>
+</ul>
+<p style="font-family: var(--mono); font-size: 0.68rem; font-weight: 300; color: var(--fg-faint); margin-top: 0.75rem;">
+  <a href="/projects" style="color: var(--fg-faint); text-decoration: none;">all projects →</a>
+</p>
 
-
-<section id="projects">
-    <h2>Projects</h2>
-    <p>View a detailed collection of my projects <a href="/projects">here</a>. You can access my open-source contributions <a href="https://github.com/savirsingh">here</a>.</p>
-</section>
-
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: me@savirsingh.com</p>
-    <p>For university-related discussion: savir.singh@mail.utoronto.ca</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/savirss">linkedin.com/in/savirss</a></p>
-    <p>Feel free to reach out if you have any opportunities or questions!</p>
-</section>
+<span class="section-label">Contact</span>
+<ul class="contact-list">
+  <li><span class="contact-label">email</span><a href="mailto:me@savirsingh.com">me@savirsingh.com</a></li>
+  <li><span class="contact-label">university</span><a href="mailto:savir.singh@mail.utoronto.ca">savir.singh@mail.utoronto.ca</a></li>
+  <li><span class="contact-label">linkedin</span><a href="https://linkedin.com/in/savirss" target="_blank" rel="noopener">linkedin.com/in/savirss</a></li>
+  <li><span class="contact-label">github</span><a href="https://github.com/savirsingh" target="_blank" rel="noopener">github.com/savirsingh</a></li>
+</ul>
