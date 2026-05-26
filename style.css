@@ -17,7 +17,7 @@
   --link-ul-h:   #e8e6e1;
   --accent:      #c9b97a;   /* warm gold — used sparingly */
   --mono:        'Geist Mono', monospace;
-  --serif:       'EB Garamond', Georgia, serif;
+  --serif:       'Lora', Georgia, serif;
   --max:         720px;
   --pad:         clamp(1.25rem, 5vw, 2.75rem);
   --border:      1px solid var(--fg-faint);
